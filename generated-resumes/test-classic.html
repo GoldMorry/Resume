@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иван Иванов - Резюме</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 3px solid #666;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-label {
+    font-weight: bold;
+}
+
+.contact-item a {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.contact-item a:hover {
+    color: white;
+}
+
+.section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h2 {
+    color: #333;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.work-item, .education-item {
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.work-item:last-child, .education-item:last-child {
+    border-bottom: none;
+}
+
+.work-item h3, .education-item h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.work-item h4, .education-item h4 {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.period {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.description {
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.major, .gpa {
+    color: #666;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-item {
+    background: #333;
+    color: white;
+    padding: 6px 12px;
+    border: 1px solid #333;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.languages-list, .certifications-list {
+    list-style: none;
+    columns: 2;
+    column-gap: 30px;
+}
+
+.languages-list li, .certifications-list li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #ccc;
+    break-inside: avoid;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .languages-list, .certifications-list {
+        columns: 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Иван Иванов</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <a href="mailto:ivan.ivanov@example.com">ivan.ivanov@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Телефон:</span>
+                    <span>+7 (999) 123-45-67</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Адрес:</span>
+                    <span>Москва, Россия</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">LinkedIn:</span>
+                    <a href="https://linkedin.com/in/ivan-ivanov" target="_blank">https://linkedin.com/in/ivan-ivanov</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">GitHub:</span>
+                    <a href="https://github.com/ivan-ivanov" target="_blank">https://github.com/ivan-ivanov</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Карьерная цель</h2>
+            <p>Опытный разработчик программного обеспечения с 5+ годами опыта в создании веб-приложений и мобильных решений. Стремлюсь применить свои навыки в инновационной компании.</p>
+        </section>
+
+        <section class="section">
+            <h2>Опыт работы</h2>
+            <div class="work-item">
+                <h3>Senior Java Developer</h3>
+                <h4>ООО &#39;Инновационные Технологии&#39;</h4>
+                <p class="period">2020 - Настоящее время</p>
+                <p class="description">Разработка корпоративных приложений на Java, ведение проектов, менторство младших разработчиков</p>
+            </div>
+            <div class="work-item">
+                <h3>Java Developer</h3>
+                <h4>ИТ Консалтинг</h4>
+                <p class="period">2017 - 2020</p>
+                <p class="description">Участие в разработке веб-приложений, интеграция с внешними системами</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Образование</h2>
+            <div class="education-item">
+                <h3>Магистр</h3>
+                <h4>Московский Государственный Университет</h4>
+                <p class="major">Специальность: Компьютерные науки</p>
+                <p class="period">2015 - 2017</p>
+                <p class="gpa">Средний балл: 4.8</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Навыки</h2>
+            <div class="skills-list">
+                <span class="skill-item">Java</span>
+                <span class="skill-item">Spring Framework</span>
+                <span class="skill-item">Hibernate</span>
+                <span class="skill-item">MySQL</span>
+                <span class="skill-item">PostgreSQL</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">HTML/CSS</span>
+                <span class="skill-item">Git</span>
+                <span class="skill-item">Maven</span>
+                <span class="skill-item">Docker</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Языки</h2>
+            <ul class="languages-list">
+                <li>Русский (родной)</li>
+                <li>Английский (продвинутый)</li>
+                <li>Немецкий (базовый)</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Сертификаты</h2>
+            <ul class="certifications-list">
+                <li>Oracle Certified Professional, Java SE 11</li>
+                <li>Spring Professional Certification</li>
+                <li>AWS Certified Developer</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>
